@@ -24,10 +24,10 @@ def producto(vec):
     return f
            
 if __name__=='__main__':   
-    vec=np.loadtxt('vec.txt',dtype=np.int)#Cargamos el vector desde un archivo extermo
-    pool=multiprocessing.Pool(processes=4)#Establecemos los procesos  
-    pool_outputs_A=pool.map(producto,vec)#Map subdivide los datos almacenados en     
     start_time = time.time()
+    vec=np.loadtxt('vec.txt',dtype=np.int)#Cargamos el vector desde un archivo extermo    
+    pool=multiprocessing.Pool(processes=4)#Establecemos los procesos  
+    pool_outputs_A=pool.map(producto,vec)#Map subdivide los datos almacenados en         
     pool.close()
     pool.join()    
     end_time = time.time()

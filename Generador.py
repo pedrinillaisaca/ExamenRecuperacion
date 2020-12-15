@@ -6,7 +6,7 @@ import os
 
 from random import randrange, choice
 a=[]
-dimension=10
+dimension=3000
 for i in range(dimension): 
     b=[]        
     for j in range(dimension):       
